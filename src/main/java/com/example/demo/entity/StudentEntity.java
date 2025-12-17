@@ -1,7 +1,10 @@
 package com.example.demo.entity; 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import java.sql.Date;
 @Entity
 public class StudentEntity{
+    @Id
      Private Integer id;
      Private String username;
      Private String email;
@@ -40,7 +43,17 @@ public void setId(Integer id ){
  public void setCreated(Date created){
     this.created=created;
  }
- Public StudentEntity(Integer id,String username,string email,Stin)
+ Public StudentEntity(Integer id,String username,string email,String password,Date created){
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.password=password;
+    this.created=created;
+
+ }
+ public SampleEntity(){
+
+ }
 
 
 }
