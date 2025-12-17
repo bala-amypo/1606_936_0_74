@@ -6,9 +6,21 @@ public class StudentEntity{
      Private String username;
      Private String email;
      Private String password;
+
+public int getid()
  
- Public String Username{
-    
+ Public String getusername(){
+   return username;
  }
+ Public void setusername(String newname){
+    this.username=newname;
+ }
+ Public String email(){
+    return email;
+ }
+ Public void setemail(String newmail){
+    this.email=newmail
+ }
+
 
 }
