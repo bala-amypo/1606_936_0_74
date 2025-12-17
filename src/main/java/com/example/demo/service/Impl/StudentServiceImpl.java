@@ -4,5 +4,8 @@ import com.example.demo.service.StudentService;
 
 @Service
 public class StudentServiceImpl implements StudentService{
+    public StudentEntity postdata(StudentEntity stu){
+        
+    }
 
 }
