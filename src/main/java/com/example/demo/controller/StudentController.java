@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService; 
 
 @RestController
-public Class StudentController{
+public class StudentController{
    @Autowired StudentService ser;
    @postmapping("/post")
    public StudentEntity senddata(@Requestbody StudentEntity stu){
