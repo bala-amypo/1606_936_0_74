@@ -4,7 +4,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 import jakarta.persistence.Id;
-import java.sql.Date;
+import java.util.Date;
 
 @Entity
 
@@ -12,10 +12,10 @@ public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 
-     Private Integer id;
-     Private String username;
-     Private String email;
-     Private String password;
+     private Integer id;
+     private String username;
+     private String email;
+     private String password;
      private Date created;
 
 public Integer getId(){
@@ -28,7 +28,7 @@ public void setId(Integer id ){
  Public String getUsername(){
    return username;
  }
- Public void setUsername(String usernamename){
+ Public void setUsername(String username){
     this.username=username;
  }
  Public String getEmail(){
@@ -45,14 +45,14 @@ public void setId(Integer id ){
  }
 
  public Date getCreated(){
-    return date;
+    return created;
  }
  public void setCreated(Date created){
     this.created=created;
  }
- Public StudentEntity(Integer id,String username,string email,String password,Date created){
+ Public StudentEntity(Integer id,String username,String email,String password,Date created){
     this.id=id;
-    this.name=name;
+    this.username=username;
     this.email=email;
     this.password=password;
     this.created=created;
