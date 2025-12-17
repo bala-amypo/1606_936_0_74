@@ -6,5 +6,9 @@ import com.example.demo.service.StudentService;
 @RestController
 public Class StudentController{
    @Autowired StudentService ser;
-   @postm
+   @postmapping("/post")
+   public StudentEntity senddata(@Requestbody StudentEntity stu){
+          return stu
+
+   }
 }
