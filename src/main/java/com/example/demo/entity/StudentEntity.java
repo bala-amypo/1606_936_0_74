@@ -50,7 +50,7 @@ public void setId(Integer id ){
  public void setCreated(Date created){
     this.created=created;
  }
- Public StudentEntity(Integer id,String username,String email,String password,Date created){
+ public StudentEntity(Integer id,String username,String email,String password,Date created){
     this.id=id;
     this.username=username;
     this.email=email;
