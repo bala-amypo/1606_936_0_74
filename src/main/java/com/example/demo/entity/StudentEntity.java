@@ -25,16 +25,16 @@ public void setId(Integer id ){
     this.id=id;
 }
  
- Public String getUsername(){
+ public String getUsername(){
    return username;
  }
- Public void setUsername(String username){
+ public void setUsername(String username){
     this.username=username;
  }
- Public String getEmail(){
+ public String getEmail(){
     return email;
  }
- Public void setEmail(String email){
+ public void setEmail(String email){
     this.email=email;
  }
  public String getPassword(){
@@ -58,7 +58,7 @@ public void setId(Integer id ){
     this.created=created;
 
  }
- public SampleEntity(){
+ public StudentEntity(){
 
  }
 
