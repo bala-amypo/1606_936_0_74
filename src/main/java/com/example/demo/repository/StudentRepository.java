@@ -1,5 +1,6 @@
 package com.example.demo.repository;
+import org.springframework.stereotype.Repository;
 @Repository 
-public interface StudentRepository{
-              
+public interface StudentRepository extends JpaRepository<StudentEntity,Integer>{
+            
 }                              
