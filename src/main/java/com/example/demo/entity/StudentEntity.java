@@ -37,7 +37,10 @@ public void setId(Integer id ){
  public Date getCreated(){
     return date;
  }
- public 
+ public void setCreated(Date created){
+    this.created=created;
+ }
+ Public StudentEntity(Integer id,String username,string email,Stin)
 
 
 }
