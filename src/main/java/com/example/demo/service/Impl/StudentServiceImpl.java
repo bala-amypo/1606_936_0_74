@@ -1,6 +1,7 @@
 package com.example.demo.service.Impl;
+import org.springframework.stereotype.Service;
 
-@service
+@Service
 public class StudentServiceImpl{
-    
+
 }
