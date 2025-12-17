@@ -6,6 +6,9 @@ public class StudentEntity{
      Private String username;
      Private String email;
      Private String password;
-
+ 
+ Public String Username{
+    
+ }
 
 }
