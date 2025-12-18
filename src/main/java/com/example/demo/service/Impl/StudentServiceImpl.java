@@ -33,7 +33,7 @@ public String DeleteData(int id){
      return "Deleted Successfully";
 }
 public  StudentEntity getData(int id){
-    return student.findById(id);
+    return student.findById(id).orElse(null);
 }
 
 
