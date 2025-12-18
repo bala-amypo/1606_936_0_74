@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface ValidationService{
 
-  ValidationEntity postdata(ValidationEntity val);
+  ValidationEntity postdata(ValidationEntity valid);
  
   List<ValidationEntity>getAllData();
 
