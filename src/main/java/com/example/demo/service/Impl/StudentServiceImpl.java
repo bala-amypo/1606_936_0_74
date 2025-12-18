@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Service
 public class StudentServiceImpl implements StudentService{
             @Autowired StudentRepository student;
-            //save()
+            //save()-----these are all inbuilt
             //findall()
             //findById()
             //deleteById()
@@ -33,7 +33,7 @@ public String DeleteData(int id){
      return "Deleted Successfully";
 }
 public  StudentEntity getData(int id){
-    
+    return student.findById(id);
 }
 
 
