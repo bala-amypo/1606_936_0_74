@@ -36,3 +36,4 @@ public String  deleteval(@PathVariable int id){
 public StudentEntity getdataid(@PathVariable int id){
 return ser.getData(id);
 }
+}
