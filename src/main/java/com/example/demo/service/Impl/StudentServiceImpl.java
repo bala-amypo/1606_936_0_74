@@ -4,6 +4,7 @@ import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.entity.StudentEntity;
+import java.util.List;
 
 
 
@@ -20,7 +21,9 @@ public class StudentServiceImpl implements StudentService{
          return student.save(stu);
          
     }
-    verride
-     List<StudentEntity>getAllData()
+    @Override
+   public  List<StudentEntity>getAllData(){
+    return student.findAll();
+   }
 
 }

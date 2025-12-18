@@ -15,4 +15,5 @@ public class StudentController{
           return ser.postdata(stu);
 
    }
+   @GetMapping("/get")
 }
