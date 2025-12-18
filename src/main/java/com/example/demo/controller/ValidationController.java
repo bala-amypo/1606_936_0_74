@@ -14,11 +14,11 @@ import java.util.List;
 
 
 @RestController
-public class StudentController{
-   @Autowired StudentService ser;
+public class ValidationController{
+   @Autowired ValidationService vs;
    @PostMapping("/post")
-   public StudentEntity senddata(@Valid @RequestBody StudentEntity stu){
-          return ser.postdata(stu);
+   public ValidationEntity senddata(@Valid @RequestBody ValidationEntity stu){
+          return vs.postdata(valid);
 
    }
   
