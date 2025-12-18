@@ -8,6 +8,8 @@ import com.example.demo.entity.StudentEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+
 
 import jakarta.validation.Valid;
 
@@ -35,5 +37,9 @@ public String  deleteval(@PathVariable int id){
 @GetMapping("/getid/{id}")
 public StudentEntity getdataid(@PathVariable int id){
 return ser.getData(id);
+}
+@PutMapping("/put/{id}")
+public StudentEntity putVal(@PathVariable int id,@RequestBody StudentEntity entity){
+return Ser.updateData(id,entity);
 }
 }
