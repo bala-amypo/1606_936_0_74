@@ -20,5 +20,7 @@ public class StudentServiceImpl implements StudentService{
          return student.save(stu);
          
     }
+    verride
+     List<StudentEntity>getAllData()
 
 }
