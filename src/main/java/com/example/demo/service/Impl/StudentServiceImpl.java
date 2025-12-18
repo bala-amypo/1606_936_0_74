@@ -6,10 +6,6 @@ import com.example.demo.repository.StudentRepository;
 import com.example.demo.entity.StudentEntity;
 import java.util.List;
 //import org.springframework.web.bind.annotation.PathVariable;
-
-
-
-
 @Service
 public class StudentServiceImpl implements StudentService{
             @Autowired StudentRepository student;

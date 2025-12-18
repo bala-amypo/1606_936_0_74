@@ -23,27 +23,7 @@ public class ValidationImpl implements ValidationService{
          return validation.save(valid);
          
     }
-    @Override
-   public  List<ValidationEntity>getAllData(){
-    return validation.findAll();
-   }
-@Override
-public String DeleteData(long id){
-     validation.deleteById(id);
-     return "Deleted Successfully";
-}
-@Override
-public  StudentEntity getData(int id){
-    return student.findById(id).orElse(null);
-}
-@Override
- public StudentEntity updateData(int id,StudentEntity entity){
-       if(student.existsById(id)){
-          entity.setId(id);
-          return student.save(entity);
-       }
-       return null;
- }
+   
 
 
 
