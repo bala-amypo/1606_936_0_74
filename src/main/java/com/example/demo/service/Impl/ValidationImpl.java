@@ -12,24 +12,24 @@ import java.util.List;
 
 @Service
 public class ValidationImpl implements ValidationService{
-            @Autowired StudentRepository student;
+            @Autowired ValidationRepository validation;
             //save()-----these are all inbuilt
             //findall()
             //findById()
             //deleteById()
             //existById()
 @Override
-    public StudentEntity postdata(StudentEntity stu){
-         return student.save(stu);
+    public ValidationEntity postdata(ValidationEntity valid ){
+         return validation.save(valid);
          
     }
     @Override
-   public  List<StudentEntity>getAllData(){
-    return student.findAll();
+   public  List<ValidationEntity>getAllData(){
+    return validation.findAll();
    }
 @Override
-public String DeleteData(int id){
-     student.deleteById(id);
+public String DeleteData(long id){
+     validation.deleteById(id);
      return "Deleted Successfully";
 }
 @Override

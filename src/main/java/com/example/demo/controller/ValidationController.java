@@ -21,7 +21,7 @@ import java.util.List;
 public class StudentController{
    @Autowired StudentService ser;
    @PostMapping("/post")
-   public StudentEntity senddata(@RequestBody StudentEntity stu){
+   public StudentEntity senddata(@Valid @RequestBody StudentEntity stu){
           return ser.postdata(stu);
 
    }
