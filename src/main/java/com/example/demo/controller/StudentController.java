@@ -40,6 +40,6 @@ return ser.getData(id);
 }
 @PutMapping("/put/{id}")
 public StudentEntity putVal(@PathVariable int id,@RequestBody StudentEntity entity){
-return Ser.updateData(id,entity);
+return ser.updateData(id,entity);
 }
 }
