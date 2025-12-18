@@ -32,5 +32,9 @@ public String DeleteData(int id){
      student.deleteById(id);
      return "Deleted Successfully";
 }
+public  StudentEntity getData(int id){
+    
+}
+
 
 }

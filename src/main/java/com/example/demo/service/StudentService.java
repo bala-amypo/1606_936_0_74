@@ -10,7 +10,8 @@ public interface StudentService{
   List<StudentEntity>getAllData();
 
   String DeleteData(int id);
-  Student
+  StudentEntity getData(int id);
+  
   
 
 }
