@@ -5,6 +5,10 @@ import com.example.demo.service.ValidationService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.ValidationEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+
+
 
 
 import jakarta.validation.Valid;
@@ -21,5 +25,9 @@ public class ValidationController{
           return vs.postdata(valid);
 
    }
+   @PutMapping("/putdata/{id}")
+public StudentEntity putVal(@PathVariable long id,@RequestBody ValidationEntity entity){
+return vs.updateData(id,entity);
+}
   
 }
