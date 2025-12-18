@@ -5,6 +5,9 @@ import com.example.demo.service.StudentService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.StudentEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import java.util.List;
+
 
 
 @RestController
@@ -16,4 +19,7 @@ public class StudentController{
 
    }
    @GetMapping("/get")
+   public List<StudentEntity>getval(){
+      return service.getAllData();
+   }
 }
