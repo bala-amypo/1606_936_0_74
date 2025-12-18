@@ -16,7 +16,7 @@ public class ValidationEntity{
     private Long id;
 
      @NotNull
-    @size(min=2,max=6,message="must be 2 to 6 char only")
+    @Size(min=2,max=6,message="must be 2 to 6 char only")
     private String username;
 
     @Email(message="Email is not valid")
@@ -64,7 +64,7 @@ public void setId(Long id ){
  }
 //PARA_CONS
 public ValidationEntity(Long Id,
-     @NotNull @size(min=2,max=6,message="must be 2 to 6 char only") String username,
+     @NotNull @Size(min=2,max=6,message="must be 2 to 6 char only") String username,
     @Email(message="Email is not valid") String email,
     @Size(min=2,max=6) @NotNull(message="Password is mandatory") String password,
      @Max(30) @Positive(message="Age must be positive")  int age
