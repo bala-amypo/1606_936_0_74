@@ -13,15 +13,22 @@ public class ValidationEntity{
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @NotNull
-    @size(min=2,max=6,message="must be 2 to 6 char only")
-    @Email(message="Email is not valid")
-    @Password(max=6)
+   
+   
+
+
 
     private Long id;
+     @NotNull
+    @size(min=2,max=6,message="must be 2 to 6 char only")
     private String username;
+    @Email(message="Email is not valid")
     private String email;
+     @Max=6
+    @NotNull(message="Password is mandatory")
     private String password;
+    @Max(30)
+    @
     private int age;
 
     
