@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.StudentEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import jakarta.vaklidation.Valid;
+
 import java.util.List;
 
 
@@ -24,7 +27,7 @@ public class StudentController{
    }
 
    @DeleteMapping("/delete{id}")
-public String  deleteval(){
-   return service.
+public String  deleteval(@PathVariable int id){
+   return service.DeleteData(id);
 }
 }
