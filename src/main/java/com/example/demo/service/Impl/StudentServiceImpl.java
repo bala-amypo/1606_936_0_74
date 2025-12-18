@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.entity.StudentEntity;
 import java.util.List;
-import org.springframework.web.bind.annotation.PathVariable;
+//import org.springframework.web.bind.annotation.PathVariable;
 
 
 
@@ -38,7 +38,7 @@ public  StudentEntity getData(int id){
 }
 @Override
  public StudentEntity updateData(int id,StudentEntity entity){
-       if(Student.existsById(id)){
+       if(student.existsById(id)){
           entity.setId(id);
           return student.save(entity);
        }
