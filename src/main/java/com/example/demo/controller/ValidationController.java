@@ -32,7 +32,7 @@ public class ValidationController{
 
 @GetMapping("/getidd/{id}")
 public ValidationEntity getdataId(@PathVariable long id){
-return vs.getDataa(id);
+return vs.getData(id);
 }
   
 }

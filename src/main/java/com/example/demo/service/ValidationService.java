@@ -9,10 +9,7 @@ public interface ValidationService{
  // ValidationEntity updateData(long id,ValidationEntity entity);
   ValidationEntity getDataa(long id);
 
- public interface ValidationService {
-    ValidationEntity postdata(ValidationEntity valid);
-    ValidationEntity getDataa(long id);
-}
+ 
 
 
 
