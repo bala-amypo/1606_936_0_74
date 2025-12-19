@@ -10,6 +10,10 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.GeneratedValue;
+
+
 
 @Entity
 @Data
@@ -18,7 +22,7 @@ import lombok.AllArgsConstructor;
 
 
 
-public class StudentEntity{
+public class IdCard  {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 
@@ -26,6 +30,7 @@ public class StudentEntity{
      private String studentcard;
      private String cardnumber;
 
+     @OneToOne
      private studentdetails student;
-     
+
 }
