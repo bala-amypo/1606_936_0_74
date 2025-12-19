@@ -1,32 +1,22 @@
-package com.example.demo.entity; 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+package com.example.demo.entity;
 
-import jakarta.persistence.Id;
-import java.util.Date;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import lombok.*;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+public class TimeStampEntity {
 
-
-
-public class StudentEntity{
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-     private Long id;
-     private String username;
-     private String email;
-     private LocalDateTime updateAt;
-     private LocalDateTime createAt;
-     }
+    private String username;
+    private String email;
 
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+}
