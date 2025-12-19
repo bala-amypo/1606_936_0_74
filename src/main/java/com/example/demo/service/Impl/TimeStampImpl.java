@@ -14,7 +14,7 @@ import java.util.List;
 
 @Service
 public class TimeStampImpl implements TimeStampService{
-            @Autowired ValidationRepository validation;
+            @Autowired ValidationRepository timestamp;
             //save()-----these are all inbuilt
             //findall()
             //findById()
@@ -22,7 +22,7 @@ public class TimeStampImpl implements TimeStampService{
             //existById()
 @Override
     public TimeStampEntity postdata(TimeStampEntity time ){
-         return TimeStamp.save(time);
+         return time.save(time);
          
     }
 }
