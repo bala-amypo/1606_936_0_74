@@ -37,8 +37,7 @@ public class TimeStampEntity {
     this.updatedat=now;
  }
  @PreUpdate
- public void Offcreate(){
-    LocaldateTime now=LocalDateTime().now();
-    this.UpdateAt=now;
+ protected void Offcreate(){
+    this.updatedat=now;
  }
 }
