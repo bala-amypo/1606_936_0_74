@@ -23,7 +23,6 @@ public class StudentEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 
      private Integer id;
-     private String name;
-     private String email;
+     private String studentcard;
      private String idnumber;
-     }
+}
