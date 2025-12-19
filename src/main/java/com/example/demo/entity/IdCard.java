@@ -24,5 +24,8 @@ public class StudentEntity{
 
      private Integer id;
      private String studentcard;
-     private String idnumber;
+     private String cardnumber;
+
+     private studentdetails student;
+     
 }
