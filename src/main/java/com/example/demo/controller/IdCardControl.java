@@ -17,8 +17,8 @@ import java.util.List;
 public class IdControl{
    @Autowired IdCardService serv;
    @PostMapping("/postid")
-   public StudentDetailsEntity senddata(@RequestBody StudentDetailsEntity studet){
-          return serr.postdata(studet);
+   public IdCard senddata(@RequestBody IdCard idc){
+          return serv.postdata(idc);
 
    }
   
