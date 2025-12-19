@@ -38,6 +38,8 @@ public class TimeStampEntity {
  }
  @PreUpdate
  protected void Offcreate(){
+        LocalDateTime now=LocalDatetime().now();
+
     this.updatedat=now;
  }
 }
