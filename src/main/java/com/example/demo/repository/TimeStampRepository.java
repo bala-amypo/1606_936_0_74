@@ -4,6 +4,6 @@ import com.example.demo.entity.TimeStampEntity;
 
 import org.springframework.stereotype.Repository;
 @Repository 
-public interface TimeStampRepository extends JpaRepository<TimeStampEntity,Integer>{
+public interface TimeStampRepository extends JpaRepository<TimeStampEntity,Long>{
             
 }                              
