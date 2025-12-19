@@ -32,6 +32,6 @@ public class IdCard  {
 
      @OneToOne
      @JoinColumn(name="student_id")
-     private studentdetails student;
+     private StudentDetailsEntity student;
 
 }
