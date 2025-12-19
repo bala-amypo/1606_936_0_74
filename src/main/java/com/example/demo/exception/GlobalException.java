@@ -1,4 +1,6 @@
 package com.example.demo.exception;
+import com.example.demo.exception.ValidationException;
+
 
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
