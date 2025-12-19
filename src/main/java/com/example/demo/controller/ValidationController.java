@@ -22,7 +22,7 @@ public class ValidationController{
    @Autowired ValidationService vs;
    @PostMapping("/data")
    public ValidationEntity senddata(@Valid @RequestBody ValidationEntity valid){
-          return vs.postdataa(valid);
+          return vs.postdata(valid);
 
    }
 //    @PutMapping("/putdata/{id}")
@@ -32,7 +32,7 @@ public class ValidationController{
 
 @GetMapping("/getidd/{id}")
 public ValidationEntity getdataId(@PathVariable long id){
-return vs.getData(id);
+return vs.getDataa(id);
 }
   
 }
