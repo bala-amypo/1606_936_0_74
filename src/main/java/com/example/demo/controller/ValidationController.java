@@ -22,7 +22,7 @@ public class ValidationController{
    @Autowired ValidationService vs;
    @PostMapping("/data")
    public ValidationEntity senddata(@Valid @RequestBody ValidationEntity valid){
-          return vs.postdata(valid);
+          return vs.postdataa(valid);
 
    }
 //    @PutMapping("/putdata/{id}")
