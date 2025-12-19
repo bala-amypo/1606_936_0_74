@@ -25,9 +25,15 @@ public class ValidationController{
           return vs.postdata(valid);
 
    }
-   @PutMapping("/putdata/{id}")
-public StudentEntity putVal(@PathVariable long id,@RequestBody ValidationEntity entity){
-return vs.updateData(id,entity);
+//    @PutMapping("/putdata/{id}")
+// public StudentEntity putVal(@PathVariable long id,@RequestBody ValidationEntity entity){
+// return vs.updateData(id,entity);
+// }
+
+@GetMapping("/getidd/{id}")
+public ValidationEntity getdataId(@PathVariable long id){
+return vs.getDataa(id);
 }
   
 }
+
