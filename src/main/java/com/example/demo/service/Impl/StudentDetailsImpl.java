@@ -15,8 +15,8 @@ public class StudentDetailsImpl implements StudentDetailsService{
             //deleteById()
             //existById()
 @Override
-    public StudentDetailsEntity postdata(StudentDetailsEntity sde){
-         return sdi.save(sde);
+    public StudentDetailsEntity postdata(StudentDetailsEntity studet){
+         return sdi.save(studet);
          
     }
    
