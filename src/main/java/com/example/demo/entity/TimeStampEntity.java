@@ -1,6 +1,9 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.GeneratedValue;
 import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.NoArgsConstructor;
