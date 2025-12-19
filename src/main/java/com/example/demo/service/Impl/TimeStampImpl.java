@@ -1,10 +1,10 @@
 package com.example.demo.service.impl;
 import org.springframework.stereotype.Service;
-import com.example.demo.service.ValidationService;
+import com.example.demo.service.TimeStampService;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.repository.ValidationRepository;
-import com.example.demo.entity.ValidationEntity;
-import com.example.demo.exception.ValidationException;
+import com.example.demo.repository.TimeStampRepository;
+import com.example.demo.entity.TimeStampEntity;
+import com.example.demo.exception.TimeStampException;
 
 import java.util.List;
 //import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +13,7 @@ import java.util.List;
 
 
 @Service
-public class ValidationImpl implements ValidationService{
+public class TimeStampImpl implements TimeStampService{
             @Autowired ValidationRepository validation;
             //save()-----these are all inbuilt
             //findall()
@@ -21,7 +21,8 @@ public class ValidationImpl implements ValidationService{
             //deleteById()
             //existById()
 @Override
-    public ValidationEntity postdata(ValidationEntity valid ){
-         return validation.save(valid);
+    public TimeStampEntity postdata(TimeStampEntity time ){
+         return TimeStamp.save(time);
          
     }
+}
