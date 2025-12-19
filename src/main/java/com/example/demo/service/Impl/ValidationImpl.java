@@ -19,13 +19,13 @@ public class ValidationImpl implements ValidationService{
             //deleteById()
             //existById()
 @Override
-    public ValidationEntity postdat(ValidationEntity valid ){
+    public ValidationEntity postdataa(ValidationEntity valid ){
          return validation.save(valid);
          
     }
     @Override
 public  ValidationEntity getDataa(long id){
-    return validation.findById(id).orElse(null);
+    return validation.findById(id).orElseThrow();
 }
    
 
