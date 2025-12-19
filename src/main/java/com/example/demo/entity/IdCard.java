@@ -11,7 +11,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import jakarta.persistence.OneToOne;
-import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.JoinColumn;
 
 
 
@@ -31,6 +31,7 @@ public class IdCard  {
      private String cardnumber;
 
      @OneToOne
+     @JoinColumn(name="student_id")
      private studentdetails student;
 
 }
