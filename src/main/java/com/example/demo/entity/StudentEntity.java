@@ -5,6 +5,15 @@ import jakarta.persistence.GenerationType;
 
 import jakarta.persistence.Id;
 import java.util.Date;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 @Entity
 
@@ -17,6 +26,7 @@ public class StudentEntity{
      private String email;
      private String password;
      private Date created;
+     }
 
 // public Integer getId(){
 //     return id;
@@ -63,4 +73,4 @@ public class StudentEntity{
 //  }
 
 
- }
+// }
