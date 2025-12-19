@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface StudentDetailsService{
 
-   StudentDetails Entity postdata(StudentEntity studet);
+   StudentDetails Entity postdata(StudentDetailsEntity studet);
 
 
 }
