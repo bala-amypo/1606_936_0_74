@@ -12,7 +12,7 @@ public class TimeStampController {
     @Autowired
     private TimeStampService tim;
 
-    @PostMapping("/post")
+    @PostMapping("/time")
     public TimeStampEntity senddata(@RequestBody TimeStampEntity time) {
         return tim.postdata(time);
     }
