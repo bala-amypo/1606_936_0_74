@@ -25,5 +25,5 @@ public class StudentEntity{
      private Integer id;
      private String name;
      private String email;
-     private String Address;
+     private String idnumber;
      }
