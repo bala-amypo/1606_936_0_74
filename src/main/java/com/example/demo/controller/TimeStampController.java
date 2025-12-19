@@ -13,7 +13,7 @@ public class TimeStampController {
     private TimeStampService tim;
 
     @PostMapping("/time")
-    public TimeStampEntity senddata(@RequestBody TimeStampEntity tim) {
-        return tim.postdata(tim);
+    public TimeStampEntity sendidData(@RequestBody TimeStampEntity time) {
+        return tim.postData(time);
     }
 }
