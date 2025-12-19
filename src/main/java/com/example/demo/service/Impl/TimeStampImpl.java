@@ -14,7 +14,7 @@ public class TimeStampServiceImpl implements TimeStampService {
     private TimeStampRepository repo;
 
     @Override
-    public TimeStampEntity postdata(TimeStampEntity time) {
+    public TimeStampEntity postData(TimeStampEntity time) {
         return repo.save(time);
     }
 }
