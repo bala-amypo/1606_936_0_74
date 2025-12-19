@@ -33,4 +33,9 @@ public class TimeStampEntity {
     this.creatAt=now;
     this.updateAt=now;
  }
+ @PreUpdate
+ public void Offcreate(){
+    LocaldateTime now=LocalDateTime().now();
+    this.UpdateAt=now;
+ }
 }
