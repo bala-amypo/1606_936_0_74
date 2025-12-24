@@ -15,13 +15,11 @@ public class StudentsController {
     @Autowired
     private StudentServ service;
 
-    // CREATE (POST)
     @PostMapping("/save")
     public StudentsStructure saveStudent(@RequestBody StudentsStructure student) {
         return service.saveStudent(student);
     }
 
-    // READ (GET by ID)
     @GetMapping("/{id}")
     public StudentsStructure getStudentById(@PathVariable int id) {
         return service.getStudentById(id);

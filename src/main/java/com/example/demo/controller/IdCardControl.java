@@ -14,6 +14,8 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/student")
+
 public class IdCardControl{
    @Autowired IdCardService serv;
    @PostMapping("/postid")
