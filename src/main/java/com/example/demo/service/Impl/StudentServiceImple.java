@@ -27,7 +27,7 @@ public class StudentServiceImple implements StudentServ {
     }
 
     @Override
-    public StudentsStructure getStudentById(int id) {
+    public StudentsStructure getStudentById(int studId) {
         return repository.findById(id).orElse(null);
     }
 }

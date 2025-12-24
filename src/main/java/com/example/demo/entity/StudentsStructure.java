@@ -15,6 +15,6 @@ public class StudentsStructure {
     @Id
     private int studId;
     private String stuName;
-    private String email;
-    private double cgpa;
+    private String stuEmail;
+    private double cGpa;
 }

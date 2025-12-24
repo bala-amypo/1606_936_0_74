@@ -6,5 +6,5 @@ public interface StudentServ {
 
     StudentsStructure saveStudent(StudentsStructure student);
 
-    StudentsStructure getStudentById(int id);
+    StudentsStructure getStudentById(int studId);
 }
