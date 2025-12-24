@@ -30,4 +30,9 @@ public class StudentsController {
     public List<StudentsStructure> getss1(@PathVariable String email) {
         return service.getBysingleEmail(email);
     }
+    @GetMapping("/getcgpa/{id}")
+    public List<StudentsStructure> getss2(@PathVariable Integer cgpa) {
+        return service.getByCgpanum(cgpa);
+    }
+
 }
