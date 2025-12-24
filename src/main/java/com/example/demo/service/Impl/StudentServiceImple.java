@@ -30,4 +30,10 @@ public class StudentServiceImple implements StudentServ {
     public StudentsStructure getStudentById(int studId) {
         return repository.findById(id).orElse(null);
     }
+        @Override
+
+      public List<getStudentByEmail>(String stuEmail){
+
+   }
+
 }
