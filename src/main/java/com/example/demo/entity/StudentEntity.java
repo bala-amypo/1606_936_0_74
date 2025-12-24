@@ -15,6 +15,8 @@ import lombok.AllArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 
 
 
