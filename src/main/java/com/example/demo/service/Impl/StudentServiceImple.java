@@ -34,7 +34,7 @@ public class StudentServiceImple implements StudentServ {
     }
 
     @Override
-    public List<StudentsStructure> getStudentByEmail(String stuEmail) {
-        return repository.findByEmail(stuEmail);
+    public List<StudentsStructure> getBysingleEmail(String Email) {
+        return repository.findByEmail(Email);
     }
 }
