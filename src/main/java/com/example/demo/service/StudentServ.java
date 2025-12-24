@@ -9,5 +9,5 @@ public interface StudentServ {
     StudentsStructure saveStudent(StudentsStructure student);
 
     StudentsStructure getStudentById(int studId);
-     List<StudentsStructure>getStudentByEmail(String stuEmail);
+     List<StudentsStructure>getStudentByEmail(String email);
 }
