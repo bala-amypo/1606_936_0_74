@@ -15,6 +15,7 @@ public class StudentServiceImple implements StudentServ {
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         return repository.save(student);
+        throw new ResourceNotFound("NetWork issue or Server issue");
     }
 
     @Override
