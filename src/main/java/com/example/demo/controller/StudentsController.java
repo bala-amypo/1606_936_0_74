@@ -24,4 +24,8 @@ public class StudentsController {
     public StudentsStructure getStudentById(@PathVariable int id) {
         return service.getStudentById(id);
     }
+    @GetMapping("/{id}")
+    public StudentsStructure getStudentById(@PathVariable int id) {
+        return service.getStudentById(id);
+    }
 }
