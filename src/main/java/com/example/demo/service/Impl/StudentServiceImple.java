@@ -2,39 +2,39 @@ package com.example.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.demo.exception.ResourceNotFound;
 import org.springframework.transaction.annotation.Transactional;
-import java.util.List;
 
 import com.example.demo.entity.StudentsStructure;
 import com.example.demo.repository.StudentRepo;
+import com.example.demo.exception.ResourceNotFound;
+
+import java.util.List;
 
 @Service
 public class StudentServiceImple implements StudentServ {
 
     @Autowired
     private StudentRepo repository;
-    
+
     @Transactional
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
-        if(student.getStuEmail().equals("kasv@gmail.com")){
-        throw new ResourceNotFound("NetWork issue or Server issue");
 
+        if ("kasv@gmail.com".equals(student.getStuEmail())) {
+            throw new ResourceNotFound("Network issue or Server issue");
         }
+
         return student;
-        
     }
 
     @Override
     public StudentsStructure getStudentById(int studId) {
-        return repository.findById(id).orElse(null);
+        return repository.findById(studId).orElse(null);
     }
-        @Override
 
-      public List<StudentsStructure>getStudentByEmail(String stuEmail){
-          return repository.findByEmail(stuEmail);
-   }
-
+    @Override
+    public List<StudentsStructure> getStudentByEmail(String stuEmail) {
+        return repository.findByEmail(stuEmail);
+    }
 }
