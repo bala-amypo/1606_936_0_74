@@ -19,7 +19,7 @@ public class StudentServiceImple implements StudentServ {
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
-        if(student.getEmail().equals("kasv@gmail.com")){
+        if(student.getStuEmail().equals("kasv@gmail.com")){
         throw new ResourceNotFound("NetWork issue or Server issue");
 
         }
