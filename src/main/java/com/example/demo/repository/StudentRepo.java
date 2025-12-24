@@ -13,4 +13,5 @@ public interface StudentRepo extends JpaRepository<StudentsStructure,Integer>{
     List<StudentsStructure>findByEmail(@Param ("email") String email);   
     @Query("SELECT s FROM StudentsStructure s WHERE s.cgpaMark >:cgpa") 
     List<StudentsStructure>findByCgpa(@Param ("cgpa") Integer cgpa);
+    
 }                              
