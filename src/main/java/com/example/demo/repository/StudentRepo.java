@@ -6,8 +6,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 
-
-
 import org.springframework.stereotype.Repository;
 @Repository 
 public interface StudentRepo extends JpaRepository<StudentsStructure,Integer>{
