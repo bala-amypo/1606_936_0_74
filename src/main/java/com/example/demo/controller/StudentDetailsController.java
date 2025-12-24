@@ -19,6 +19,8 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/studentdetails")
+
 public class StudentDetailsController {
     @Autowired
     StudentDetailsService serr;

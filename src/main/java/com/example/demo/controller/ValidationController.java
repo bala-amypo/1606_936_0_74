@@ -18,6 +18,8 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/validation")
+
 public class ValidationController{
    @Autowired ValidationService vs;
    @PostMapping("/data")

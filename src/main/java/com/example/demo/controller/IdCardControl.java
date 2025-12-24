@@ -14,7 +14,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/idcard")
 
 public class IdCardControl{
    @Autowired IdCardService serv;
