@@ -37,4 +37,8 @@ public class StudentServiceImple implements StudentServ {
     public List<StudentsStructure> getBysingleEmail(String Email) {
         return repository.findByEmail(Email);
     }
+    @Override
+    public List<StudentsStructure> getByCgpanum(Integer cgpa) {
+        return repository.findBy(Email);
+    }
 }

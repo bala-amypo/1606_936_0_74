@@ -10,4 +10,6 @@ public interface StudentServ {
 
     StudentsStructure getStudentById(int studId);
      List<StudentsStructure>getBysingleEmail(String email);
+    List<StudentsStructure>getByCgpanum(Integer cgpa);
+
 }
