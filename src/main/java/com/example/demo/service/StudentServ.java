@@ -1,10 +1,10 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.StudentStructure;
+import com.example.demo.entity.StudentsStructure;
 
 public interface StudentServ {
 
-    StudentStructure saveStudent(StudentStructure student);
+    StudentsStructure saveStudent(StudentsStructure student);
 
-    StudentStructure getStudentById(int id);
+    StudentsStructure getStudentById(int id);
 }

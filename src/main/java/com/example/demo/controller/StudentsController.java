@@ -3,25 +3,25 @@ package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.entity.StudentStructure;
-import com.example.demo.service.StudentService;
+import com.example.demo.entity.StudentsStructure;
+import com.example.demo.service.StudentServ;
 
 @RestController
 @RequestMapping("/student")
-public class StudentController {
+public class StudentsController {
 
     @Autowired
-    private StudentService service;
+    private StudentServ service;
 
     // CREATE (POST)
     @PostMapping("/save")
-    public StudentStructure saveStudent(@RequestBody StudentStructure student) {
+    public StudentsStructure saveStudent(@RequestBody StudentsStructure student) {
         return service.saveStudent(student);
     }
 
     // READ (GET by ID)
     @GetMapping("/{id}")
-    public StudentStructure getStudentById(@PathVariable int id) {
+    public StudentsStructure getStudentById(@PathVariable int id) {
         return service.getStudentById(id);
     }
 }

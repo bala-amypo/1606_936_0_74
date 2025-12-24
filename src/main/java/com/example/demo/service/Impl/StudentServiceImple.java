@@ -3,7 +3,7 @@ package com.example.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.StudentStructure;
+import com.example.demo.entity.StudentsStructure;
 import com.example.demo.repository.StudentRepo;
 
 @Service
@@ -13,12 +13,12 @@ public class StudentServiceImple implements StudentServ {
     private StudentRepo repository;
 
     @Override
-    public StudentStructure saveStudent(StudentStructure student) {
+    public StudentsStructure saveStudent(StudentsStructure student) {
         return repository.save(student);
     }
 
     @Override
-    public StudentStructure getStudentById(int id) {
+    public StudentsStructure getStudentById(int id) {
         return repository.findById(id).orElse(null);
     }
 }
