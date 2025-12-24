@@ -14,7 +14,7 @@ import java.util.List;
 
 
 @RestController
-public class IdControl{
+public class IdCardControl{
    @Autowired IdCardService serv;
    @PostMapping("/postid")
    public IdCard senddata(@RequestBody IdCard idc){

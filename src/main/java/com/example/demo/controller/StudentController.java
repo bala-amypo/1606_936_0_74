@@ -18,7 +18,7 @@ import java.util.List;
 
 
 @RestController
-public class StudentController{
+public class StudentDetailsController{
    @Autowired StudentService ser;
    @PostMapping("/post")
    public StudentEntity senddata(@RequestBody StudentEntity stu){
