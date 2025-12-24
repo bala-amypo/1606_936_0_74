@@ -13,5 +13,6 @@ import org.springframework.stereotype.Repository;
 public interface StudentRepo extends JpaRepository<StudentsStructure,Integer>{
     @Query("SELECT s FROM StudentsStructure s WHERE s.stuEmail=:email")
     List<StudentsStructure>findByEmail(@Param ("email") String email);   
-    @Query("SELECT s FROM StudentsStructure s WHERE s.cGpaMark") 
+    @Query("SELECT s FROM StudentsStructure s WHERE s.cgpaMark >:cgpa") 
+    List<StudentsStructure>findByCgpa(@Param ("cgpa") Integer cgpa);
 }                              

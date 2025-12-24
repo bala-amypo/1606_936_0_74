@@ -16,5 +16,5 @@ public class StudentsStructure {
     private int studId;
     private String stuName;
     private String stuEmail;
-    private double cGpaMark;
+    private double cgpaMark;
 }
