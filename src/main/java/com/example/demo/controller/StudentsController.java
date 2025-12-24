@@ -27,7 +27,7 @@ public class StudentsController {
         return service.getStudentById(id);
     }
     @GetMapping("/{id}")
-    public List<StudentsStructure> getStudentByEmail(@PathVariable String email) {
-        return service.getByEmail(email);
+    public List<StudentsStructure> getss1(@PathVariable String email) {
+        return service.getStudentByEmail(email);
     }
 }
