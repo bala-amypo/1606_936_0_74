@@ -9,6 +9,6 @@ import org.springframework.data.jpa.repository.query.Param;
 import org.springframework.stereotype.Repository;
 @Repository 
 public interface StudentRepo extends JpaRepository<StudentsStructure,Integer>{
-    @Query("SELECT * FROM StudentsStructure s WHERE s.stuEmail=:email")
+    @Query("SELECT s FROM StudentsStructure s WHERE s.stuEmail=:email")
     List<StudentsStructure>findEmail(@Param ("email") String email);    
 }                              

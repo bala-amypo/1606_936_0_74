@@ -33,7 +33,7 @@ public class StudentServiceImple implements StudentServ {
         @Override
 
       public List<getStudentByEmail>(String stuEmail){
-
+          return repository.findByEmail(email);
    }
 
 }
