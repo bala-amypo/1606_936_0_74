@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.exception.ResourceNotFound;
 import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
 
 import com.example.demo.entity.StudentsStructure;
 import com.example.demo.repository.StudentRepo;
@@ -32,8 +33,8 @@ public class StudentServiceImple implements StudentServ {
     }
         @Override
 
-      public List<getStudentByEmail>(String stuEmail){
-          return repository.findByEmail(email);
+      public List<StudentsStructure>getStudentByEmail(String stuEmail){
+          return repository.findByEmail(stuEmail);
    }
 
 }
