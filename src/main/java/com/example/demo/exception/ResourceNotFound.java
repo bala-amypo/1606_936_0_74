@@ -1,4 +1,8 @@
-package com.example.OneToMany.exception;
-public class ResourceNotFound(String message){
+package com.example.demo.exception;
+public class ResourceNotFound extends RuntimeException{
+    public ResourceNotFound(String message){
+
+    
     super(message);
+}
 }
