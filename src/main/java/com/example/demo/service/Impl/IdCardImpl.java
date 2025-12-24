@@ -15,7 +15,7 @@ public class IdCardImpl implements IdCardService{
             //deleteById()
             //existById()
 @Override
-    public IdCard postdata(IdCard idc){
+    public IdCard postdataa(IdCard idc){
          return idr.save(idc);
          
     }

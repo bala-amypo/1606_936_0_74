@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface IdCardService{
 
-   IdCard Entity postdata(IdCard idc);
+   IdCard Entity postdataa(IdCard idc);
 
 
 }

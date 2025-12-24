@@ -18,7 +18,7 @@ public class IdControl{
    @Autowired IdCardService serv;
    @PostMapping("/postid")
    public IdCard senddata(@RequestBody IdCard idc){
-          return serv.postdata(idc);
+          return serv.postdataa(idc);
 
    }
   
